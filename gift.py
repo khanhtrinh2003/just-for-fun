@@ -14,8 +14,7 @@ print(giatri)
 for i in range(0, so_qua):
 	if giatri[i] not in mfilter:
 		mfilter.append(giatri[i])
-print(mfilter)
-print(len(giatri))
+
 for i in range(0, so_nguoi):
 	dau = int(input('Start: '))
 	sau = int(input('End: '))
