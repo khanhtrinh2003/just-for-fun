@@ -7,13 +7,13 @@ energy = 0;
 start = nui[0]
 print(nui)
 
-for i in range(1,len(nui)-1):
-	if nui[i] < nui[i+1]:
-		if nui[i+1] > start:
-			energy += nui[i+1] - nui[i]
-			if i < len(nui) - 2:
-				if nui[i+1] > nui[i+2]:
-					start = nui[i+1]
+for i in range(1,len(nui)):
+	if nui[i-1] < nui[i]:
+		if nui[i] > start:
+			energy += nui[i] - nui[i-1]
+			if i < len(nui) - 3:
+				if nui[i] > nui[i+1]:
+					start = nui[i]
 			else: continue
 		else: continue
 	elif start < nui[i]:
