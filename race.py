@@ -16,10 +16,4 @@ for i in range(1,len(nui)):
 					start = nui[i]
 			else: continue
 		else: continue
-	elif start < nui[i]:
-		energy += nui[i] - nui[i-1]
-		if nui[i] > nui[i+1]:
-			start = nui[i]
-		else: continue
-	else: continue
 print(energy)
