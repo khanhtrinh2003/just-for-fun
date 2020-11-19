@@ -1,6 +1,6 @@
 mfilter = []
 giatri = []
-so_qua = int(input('Enter the number of gift: '))
+so_qua =   int(input('Enter the number of gift:   '))
 so_nguoi = int(input('Enter the number of people: '))
 dem = 0
 tong = 0
@@ -16,8 +16,8 @@ for i in range(0, so_qua):
 		mfilter.append(giatri[i])
 
 for i in range(0, so_nguoi):
-	dau = int(input('Start: '))
-	sau = int(input('End: '))
+	dau = int(input('\nStart: '))
+	sau = int(input('End:   '))
 
 	for j in range(0, len(mfilter)):
 		for m in range(dau-1, sau):
@@ -28,5 +28,5 @@ for i in range(0, so_nguoi):
 		sumt += tong
 		tong = 0
 		dem = 0
-	print('Nguoi', i+1,'nhan qua co gia tri la ', sumt)
+	print('\n Nguoi', i+1,'nhan qua co gia tri la ', sumt)
 	sumt =0 
