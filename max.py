@@ -1,5 +1,5 @@
 N = int(input('So chu so: '))
-S = int(input('Tong cac chu so'))
+S = int(input('Tong cac chu so: '))
 Dau = 9
 Tong = 0
 while N != 0 : 
